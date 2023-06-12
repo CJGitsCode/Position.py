@@ -1,0 +1,4 @@
+Before you go out doing random and wrong things in the code, do this.
+Make sure to not to add multiple special characters unless you modify the code and you know what you're doing.
+In the "FindPosition" function, there is a "Swap" function below it. Change the zero to your special character.
+Change the "val" variable to your text string also including your single special character.
