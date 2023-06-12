@@ -6,12 +6,10 @@ fix = '*'
 index = 0
 digits = []
 def CreateDigits():
-    global item
-    global idx
-    idx = 0
-    for i in range(len(item)):
-        digits.append(item[idx])
-        idx += 1
+    cleaned = ''
+    for i in range(len(val)):
+        digits.append('*')
+        cleaned = f"{cleaned}*"
 def Swap(first, second):
     global fix
     digits[first] = second
@@ -32,6 +30,8 @@ def FindPosition():
     running = True
     idx = 0
     while running:
+        if val == cleaned:
+            runnning = False
         Swap(idx, '0')
         CreateItem()
         if val == item:
